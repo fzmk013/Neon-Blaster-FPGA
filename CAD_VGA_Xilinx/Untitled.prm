@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\//Untitled -x xcf04s -u 00000000 C:/Users/fzmk0/Desktop/CADProject_FatemeZahraMousanejad_AmirMohammadOmidi/CADProject_FatemeZahraMousanejad_980122680006/CAD_VGA_Xilinx/cad971test.bit 
+
+PROM C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\Untitled.prm map: Wed Jan 31 11:07:04 2024
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 02e8fa75
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Jan 31 10:21:55 2024 C:/Users/fzmk0/Desktop/CADProject_FatemeZahraMousanejad_AmirMohammadOmidi/CADProject_FatemeZahraMousanejad_980122680006/CAD_VGA_Xilinx/cad971test.bit

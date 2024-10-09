@@ -1,0 +1,866 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: CAD971Test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CAD971Test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CAD971Test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : CAD971Test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\VGA_Square.vhd" into library work
+Parsing entity <VGA_Square>.
+Parsing architecture <Behavioral> of entity <vga_square>.
+Parsing VHDL file "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\VGA_controller.vhd" into library work
+Parsing entity <VGA_controller>.
+Parsing architecture <Behavioral> of entity <vga_controller>.
+Parsing VHDL file "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\CAD971Test.vhd" into library work
+Parsing entity <CAD971Test>.
+Parsing architecture <CAD971Test> of entity <cad971test>.
+WARNING:HDLCompiler:946 - "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\CAD971Test.vhd" Line 92: Actual for formal port reset is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\CAD971Test.vhd" Line 102: Actual for formal port reset is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <CAD971Test> (architecture <CAD971Test>) from library <work>.
+
+Elaborating entity <VGA_controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <VGA_Square> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\VGA_Square.vhd" Line 24: Using initial value 440 for y_player since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\CAD971Test.vhd" Line 160: lose should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CAD971Test>.
+    Related source file is "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\CAD971Test.vhd".
+WARNING:Xst:647 - Input <SW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <flag_key>.
+    Found 1-bit register for signal <flag_key_0020>.
+    Found 25-bit register for signal <counter>.
+    Found 6-bit register for signal <timer_game>.
+    Found 8-bit register for signal <Leds>.
+    Found 8-bit register for signal <leds_signal>.
+    Found 24-bit register for signal <timer_leds>.
+    Found 8-bit register for signal <seg0>.
+    Found 8-bit register for signal <seg1>.
+    Found 8-bit register for signal <seg2>.
+    Found 8-bit register for signal <seg3>.
+    Found 4-bit register for signal <seg_selectors>.
+    Found 7-bit register for signal <input>.
+    Found 13-bit register for signal <_v2>.
+    Found 13-bit adder for signal <counter[12]_GND_5_o_add_0_OUT> created at line 119.
+    Found 25-bit adder for signal <counter[24]_GND_5_o_add_6_OUT> created at line 143.
+    Found 6-bit adder for signal <timer_game[5]_GND_5_o_add_8_OUT> created at line 149.
+    Found 24-bit adder for signal <timer_leds[23]_GND_5_o_add_18_OUT> created at line 178.
+    Found 6-bit subtractor for signal <GND_5_o_GND_5_o_sub_55_OUT<5:0>> created at line 263.
+    Found 6-bit subtractor for signal <GND_5_o_GND_5_o_sub_57_OUT<5:0>> created at line 267.
+    Found 6-bit subtractor for signal <GND_5_o_GND_5_o_sub_59_OUT<5:0>> created at line 271.
+    Found 6-bit subtractor for signal <GND_5_o_GND_5_o_sub_61_OUT<5:0>> created at line 275.
+    Found 6-bit subtractor for signal <GND_5_o_GND_5_o_sub_63_OUT<5:0>> created at line 279.
+    Found 6-bit subtractor for signal <GND_5_o_GND_5_o_sub_65_OUT<5:0>> created at line 283.
+    Found 16x8-bit Read Only RAM for signal <_n0251>
+    Found 32x16-bit Read Only RAM for signal <_n0430>
+WARNING:Xst:737 - Found 1-bit latch for signal <flag_rst_0018>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 6-bit comparator lessequal for signal <n0066> created at line 262
+    Found 6-bit comparator lessequal for signal <n0069> created at line 266
+    Found 6-bit comparator lessequal for signal <n0072> created at line 270
+    Found 6-bit comparator lessequal for signal <n0075> created at line 274
+    Found 6-bit comparator lessequal for signal <n0078> created at line 278
+    Found 6-bit comparator lessequal for signal <n0081> created at line 282
+    Summary:
+	inferred   2 RAM(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred 129 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   6 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <CAD971Test> synthesized.
+
+Synthesizing Unit <VGA_controller>.
+    Related source file is "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\VGA_controller.vhd".
+    Found 11-bit register for signal <CurrentVPos>.
+    Found 11-bit register for signal <CurrentHPos>.
+    Found 11-bit adder for signal <CurrentHPos[10]_GND_6_o_add_1_OUT> created at line 49.
+    Found 11-bit adder for signal <CurrentVPos[10]_GND_6_o_add_3_OUT> created at line 52.
+    Found 11-bit subtractor for signal <GND_6_o_GND_6_o_sub_20_OUT<10:0>> created at line 80.
+    Found 11-bit subtractor for signal <GND_6_o_GND_6_o_sub_17_OUT<10:0>> created at line 77.
+    Found 11-bit comparator greater for signal <CurrentHPos[10]_GND_6_o_LessThan_1_o> created at line 48
+    Found 11-bit comparator greater for signal <CurrentVPos[10]_GND_6_o_LessThan_3_o> created at line 51
+    Found 11-bit comparator lessequal for signal <CurrentHPos[10]_GND_6_o_LessThan_10_o> created at line 62
+    Found 11-bit comparator lessequal for signal <CurrentVPos[10]_GND_6_o_LessThan_11_o> created at line 65
+    Found 11-bit comparator lessequal for signal <n0012> created at line 68
+    Found 11-bit comparator greater for signal <CurrentHPos[10]_GND_6_o_LessThan_13_o> created at line 68
+    Found 11-bit comparator lessequal for signal <n0017> created at line 71
+    Found 11-bit comparator greater for signal <CurrentVPos[10]_GND_6_o_LessThan_15_o> created at line 71
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <VGA_controller> synthesized.
+
+Synthesizing Unit <VGA_Square>.
+    Related source file is "C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\VGA_Square.vhd".
+WARNING:Xst:647 - Input <Btn<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SQUAREWIDTH> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <game_over>.
+    Found 1-bit register for signal <flag_start>.
+    Found 1-bit register for signal <lose>.
+    Found 1-bit register for signal <flag_enemy>.
+    Found 2-bit register for signal <flag_dir_enemy>.
+    Found 32-bit register for signal <player_score>.
+    Found 32-bit register for signal <enemy_speed>.
+    Found 32-bit register for signal <pseudo_rand>.
+    Found 32-bit register for signal <counter_player>.
+    Found 32-bit register for signal <freq_bullet>.
+    Found 32-bit register for signal <freq_enemy>.
+    Found 32-bit register for signal <timer_bullet>.
+    Found 6-bit register for signal <ColorOut>.
+    Found 32-bit register for signal <x_enemy>.
+    Found 32-bit register for signal <y_enemy>.
+    Found 3-bit register for signal <enemy_life_counter>.
+    Found 32-bit register for signal <x_player>.
+    Found 32-bit register for signal <y_bullet>.
+    Found 32-bit register for signal <x_bullet>.
+    Found 32-bit register for signal <NumX>.
+    Found 32-bit register for signal <NumY>.
+    Found 32-bit adder for signal <counter_player[31]_GND_8_o_add_0_OUT> created at line 75.
+    Found 32-bit adder for signal <freq_bullet[31]_GND_8_o_add_1_OUT> created at line 76.
+    Found 32-bit adder for signal <freq_enemy[31]_GND_8_o_add_2_OUT> created at line 77.
+    Found 32-bit adder for signal <timer_bullet[31]_GND_8_o_add_3_OUT> created at line 78.
+    Found 32-bit adder for signal <n0290> created at line 95.
+    Found 32-bit adder for signal <n0291> created at line 95.
+    Found 3-bit adder for signal <GND_8_o_PWR_9_o_add_28_OUT> created at line 112.
+    Found 32-bit adder for signal <x_enemy[31]_enemy_speed[31]_add_34_OUT> created at line 119.
+    Found 32-bit adder for signal <y_enemy[31]_enemy_speed[31]_add_38_OUT> created at line 127.
+    Found 32-bit adder for signal <x_player[31]_GND_8_o_add_50_OUT> created at line 153.
+    Found 32-bit adder for signal <x_player[31]_GND_8_o_add_58_OUT> created at line 164.
+    Found 32-bit adder for signal <y_enemy[31]_GND_8_o_add_66_OUT> created at line 179.
+    Found 32-bit adder for signal <x_enemy[31]_GND_8_o_add_68_OUT> created at line 179.
+    Found 32-bit adder for signal <x_player[31]_GND_8_o_add_70_OUT> created at line 179.
+    Found 32-bit adder for signal <player_score[31]_GND_8_o_add_80_OUT> created at line 194.
+    Found 32-bit adder for signal <enemy_speed[31]_GND_8_o_add_87_OUT> created at line 204.
+    Found 32-bit adder for signal <x_enemy[31]_GND_8_o_add_89_OUT> created at line 210.
+    Found 32-bit adder for signal <y_enemy[31]_GND_8_o_add_90_OUT> created at line 211.
+    Found 32-bit adder for signal <n0341> created at line 263.
+    Found 32-bit adder for signal <n0342> created at line 263.
+    Found 32-bit adder for signal <n0343> created at line 263.
+    Found 32-bit adder for signal <n0345> created at line 266.
+    Found 32-bit adder for signal <n0347> created at line 272.
+    Found 32-bit adder for signal <n0348> created at line 272.
+    Found 32-bit adder for signal <n0350> created at line 275.
+    Found 32-bit adder for signal <n0351> created at line 275.
+    Found 32-bit subtractor for signal <x_enemy[31]_enemy_speed[31]_sub_36_OUT<31:0>> created at line 121.
+    Found 32-bit subtractor for signal <y_enemy[31]_enemy_speed[31]_sub_38_OUT<31:0>> created at line 125.
+    Found 32-bit subtractor for signal <x_player[31]_GND_8_o_sub_53_OUT<31:0>> created at line 155.
+    Found 32-bit subtractor for signal <y_bullet[31]_GND_8_o_sub_64_OUT<31:0>> created at line 170.
+    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_82_OUT<2:0>> created at line 197.
+    Found 6-bit 7-to-1 multiplexer for signal <enemy_life_counter[2]_GND_8_o_wide_mux_250_OUT> created at line 217.
+    Found 12-bit comparator greater for signal <GND_8_o_x_enemy[11]_LessThan_9_o> created at line 84
+    Found 12-bit comparator lessequal for signal <n0016> created at line 84
+    Found 12-bit comparator greater for signal <GND_8_o_y_enemy[11]_LessThan_12_o> created at line 84
+    Found 12-bit comparator lessequal for signal <n0019> created at line 84
+    Found 12-bit comparator greater for signal <GND_8_o_x_player[11]_LessThan_16_o> created at line 90
+    Found 12-bit comparator lessequal for signal <n0026> created at line 90
+    Found 11-bit comparator greater for signal <GND_8_o_ScanlineY[10]_LessThan_19_o> created at line 90
+    Found 11-bit comparator lessequal for signal <n0029> created at line 90
+    Found 12-bit comparator greater for signal <GND_8_o_x_bullet[11]_LessThan_22_o> created at line 95
+    Found 12-bit comparator lessequal for signal <n0037> created at line 95
+    Found 12-bit comparator greater for signal <GND_8_o_y_bullet[11]_LessThan_25_o> created at line 95
+    Found 12-bit comparator lessequal for signal <n0041> created at line 95
+    Found 32-bit comparator lessequal for signal <n0067> created at line 130
+    Found 32-bit comparator lessequal for signal <n0070> created at line 134
+    Found 32-bit comparator lessequal for signal <n0073> created at line 138
+    Found 32-bit comparator lessequal for signal <n0076> created at line 142
+    Found 32-bit comparator lessequal for signal <n0084> created at line 152
+    Found 32-bit comparator lessequal for signal <n0088> created at line 154
+    Found 32-bit comparator lessequal for signal <n0106> created at line 179
+    Found 32-bit comparator lessequal for signal <n0109> created at line 179
+    Found 32-bit comparator lessequal for signal <n0112> created at line 179
+    Found 32-bit comparator lessequal for signal <n0119> created at line 189
+    Found 32-bit comparator lessequal for signal <n0121> created at line 190
+    Found 32-bit comparator lessequal for signal <n0123> created at line 191
+    Found 32-bit comparator lessequal for signal <n0125> created at line 192
+    Found 12-bit comparator lessequal for signal <n0146> created at line 228
+    Found 12-bit comparator lessequal for signal <n0158> created at line 257
+    Found 12-bit comparator lessequal for signal <n0165> created at line 263
+    Found 12-bit comparator lessequal for signal <n0168> created at line 263
+    Found 12-bit comparator lessequal for signal <n0173> created at line 263
+    Found 12-bit comparator lessequal for signal <n0180> created at line 266
+    Found 12-bit comparator lessequal for signal <n0185> created at line 266
+    Found 12-bit comparator lessequal for signal <n0191> created at line 272
+    Found 12-bit comparator lessequal for signal <n0194> created at line 272
+    Found 12-bit comparator lessequal for signal <n0196> created at line 272
+    Found 12-bit comparator lessequal for signal <n0199> created at line 272
+    Found 12-bit comparator lessequal for signal <n0206> created at line 275
+    Found 12-bit comparator lessequal for signal <n0209> created at line 275
+    Summary:
+	inferred  27 Adder/Subtractor(s).
+	inferred 463 D-type flip-flop(s).
+	inferred  38 Comparator(s).
+	inferred  26 Multiplexer(s).
+Unit <VGA_Square> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port Read Only RAM                    : 1
+ 32x16-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 41
+ 11-bit adder                                          : 2
+ 11-bit subtractor                                     : 2
+ 13-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 3-bit addsub                                          : 1
+ 32-bit adder                                          : 22
+ 32-bit addsub                                         : 3
+ 32-bit subtractor                                     : 1
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 6
+# Registers                                            : 37
+ 1-bit register                                        : 6
+ 11-bit register                                       : 2
+ 13-bit register                                       : 1
+ 2-bit register                                        : 1
+ 24-bit register                                       : 1
+ 25-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 14
+ 4-bit register                                        : 1
+ 6-bit register                                        : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 6
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 52
+ 11-bit comparator greater                             : 5
+ 11-bit comparator lessequal                           : 5
+ 12-bit comparator greater                             : 5
+ 12-bit comparator lessequal                           : 18
+ 32-bit comparator lessequal                           : 13
+ 6-bit comparator lessequal                            : 6
+# Multiplexers                                         : 65
+ 1-bit 2-to-1 multiplexer                              : 6
+ 11-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 5
+ 25-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 15
+ 6-bit 7-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 23
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <game_over> in Unit <VGA_SQ> is equivalent to the following FF/Latch, which will be removed : <lose> 
+
+Synthesizing (advanced) Unit <CAD971Test>.
+The following registers are absorbed into counter <timer_leds>: 1 register on signal <timer_leds>.
+The following registers are absorbed into counter <_i000016>: 1 register on signal <_i000016>.
+The following registers are absorbed into counter <timer_game>: 1 register on signal <timer_game>.
+INFO:Xst:3231 - The small RAM <Mram__n0251> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <input<3:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0430> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 16-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <score<4:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <CAD971Test> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA_Square>.
+The following registers are absorbed into accumulator <y_enemy>: 1 register on signal <y_enemy>.
+The following registers are absorbed into accumulator <x_enemy>: 1 register on signal <x_enemy>.
+The following registers are absorbed into counter <player_score>: 1 register on signal <player_score>.
+The following registers are absorbed into accumulator <x_player>: 1 register on signal <x_player>.
+The following registers are absorbed into counter <counter_player>: 1 register on signal <counter_player>.
+The following registers are absorbed into counter <freq_bullet>: 1 register on signal <freq_bullet>.
+The following registers are absorbed into counter <freq_enemy>: 1 register on signal <freq_enemy>.
+The following registers are absorbed into counter <timer_bullet>: 1 register on signal <timer_bullet>.
+Unit <VGA_Square> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA_controller>.
+The following registers are absorbed into counter <CurrentHPos>: 1 register on signal <CurrentHPos>.
+The following registers are absorbed into counter <CurrentVPos>: 1 register on signal <CurrentVPos>.
+Unit <VGA_controller> synthesized (advanced).
+WARNING:Xst:2677 - Node <NumX_12> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_13> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_14> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_15> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_16> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_17> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_18> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_19> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_20> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_21> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_22> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_23> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_24> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_25> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_26> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_27> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_28> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_29> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_30> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumX_31> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_12> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_13> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_14> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_15> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_16> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_17> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_18> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_19> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_20> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_21> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_22> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_23> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_24> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_25> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_26> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_27> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_28> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_29> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_30> of sequential type is unconnected in block <VGA_Square>.
+WARNING:Xst:2677 - Node <NumY_31> of sequential type is unconnected in block <VGA_Square>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 32x16-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 30
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 8
+ 13-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 3-bit addsub                                          : 1
+ 32-bit adder                                          : 9
+ 32-bit subtractor                                     : 1
+ 6-bit subtractor                                      : 6
+# Counters                                             : 10
+ 11-bit up counter                                     : 2
+ 13-bit up counter                                     : 1
+ 24-bit up counter                                     : 1
+ 32-bit up counter                                     : 5
+ 6-bit up counter                                      : 1
+# Accumulators                                         : 3
+ 32-bit updown accumulator                             : 2
+ 32-bit updown loadable accumulator                    : 1
+# Registers                                            : 253
+ Flip-Flops                                            : 253
+# Comparators                                          : 52
+ 11-bit comparator greater                             : 5
+ 11-bit comparator lessequal                           : 5
+ 12-bit comparator greater                             : 5
+ 12-bit comparator lessequal                           : 18
+ 32-bit comparator lessequal                           : 13
+ 6-bit comparator lessequal                            : 6
+# Multiplexers                                         : 63
+ 1-bit 2-to-1 multiplexer                              : 8
+ 11-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 4
+ 25-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 15
+ 6-bit 7-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 23
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <game_over> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <lose> 
+WARNING:Xst:1293 - FF/Latch <seg2_7> has a constant value of 1 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg3_7> has a constant value of 1 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg0_7> has a constant value of 1 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <input_6> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <seg2_0> in Unit <CAD971Test> is equivalent to the following FF/Latch, which will be removed : <seg2_3> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    seg1_7 in unit <CAD971Test>
+    seg1_6 in unit <CAD971Test>
+    seg1_1 in unit <CAD971Test>
+    seg3_6 in unit <CAD971Test>
+    seg3_5 in unit <CAD971Test>
+    seg3_4 in unit <CAD971Test>
+    seg2_6 in unit <CAD971Test>
+    flag_rst_0018 in unit <CAD971Test>
+
+
+Optimizing unit <CAD971Test> ...
+WARNING:Xst:1293 - FF/Latch <input_4> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <input_5> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <VGA_Square> ...
+INFO:Xst:2261 - The FF/Latch <ColorOut_4> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <ColorOut_5> 
+INFO:Xst:2261 - The FF/Latch <ColorOut_0> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <ColorOut_1> 
+INFO:Xst:2261 - The FF/Latch <ColorOut_2> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <ColorOut_3> 
+INFO:Xst:2261 - The FF/Latch <ColorOut_4> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <ColorOut_5> 
+INFO:Xst:2261 - The FF/Latch <ColorOut_0> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <ColorOut_1> 
+INFO:Xst:2261 - The FF/Latch <ColorOut_2> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <ColorOut_3> 
+
+Optimizing unit <VGA_controller> ...
+WARNING:Xst:1293 - FF/Latch <VGA_SQ/x_player_0> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_Control/CurrentVPos_10> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_Control/CurrentHPos_10> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/x_bullet_0> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <leds_signal_1> in Unit <CAD971Test> is equivalent to the following 3 FFs/Latches, which will be removed : <leds_signal_3> <leds_signal_5> <leds_signal_7> 
+INFO:Xst:2261 - The FF/Latch <Leds_0> in Unit <CAD971Test> is equivalent to the following 3 FFs/Latches, which will be removed : <Leds_2> <Leds_4> <Leds_6> 
+INFO:Xst:2261 - The FF/Latch <Leds_1> in Unit <CAD971Test> is equivalent to the following 3 FFs/Latches, which will be removed : <Leds_3> <Leds_5> <Leds_7> 
+INFO:Xst:2261 - The FF/Latch <VGA_SQ/x_bullet_31> in Unit <CAD971Test> is equivalent to the following 20 FFs/Latches, which will be removed : <VGA_SQ/x_bullet_30> <VGA_SQ/x_bullet_29> <VGA_SQ/x_bullet_28> <VGA_SQ/x_bullet_27> <VGA_SQ/x_bullet_26> <VGA_SQ/x_bullet_25> <VGA_SQ/x_bullet_24> <VGA_SQ/x_bullet_23> <VGA_SQ/x_bullet_22> <VGA_SQ/x_bullet_21> <VGA_SQ/x_bullet_20> <VGA_SQ/x_bullet_19> <VGA_SQ/x_bullet_18> <VGA_SQ/x_bullet_17> <VGA_SQ/x_bullet_16> <VGA_SQ/x_bullet_15> <VGA_SQ/x_bullet_14> <VGA_SQ/x_bullet_13> <VGA_SQ/x_bullet_12> <VGA_SQ/x_bullet_11> 
+INFO:Xst:2261 - The FF/Latch <VGA_SQ/x_player_31> in Unit <CAD971Test> is equivalent to the following 21 FFs/Latches, which will be removed : <VGA_SQ/x_player_30> <VGA_SQ/x_player_29> <VGA_SQ/x_player_28> <VGA_SQ/x_player_27> <VGA_SQ/x_player_26> <VGA_SQ/x_player_25> <VGA_SQ/x_player_24> <VGA_SQ/x_player_23> <VGA_SQ/x_player_22> <VGA_SQ/x_player_21> <VGA_SQ/x_player_20> <VGA_SQ/x_player_19> <VGA_SQ/x_player_18> <VGA_SQ/x_player_17> <VGA_SQ/x_player_16> <VGA_SQ/x_player_15> <VGA_SQ/x_player_14> <VGA_SQ/x_player_13> <VGA_SQ/x_player_12> <VGA_SQ/x_player_11> <VGA_SQ/x_player_10> 
+INFO:Xst:3203 - The FF/Latch <leds_signal_1> in Unit <CAD971Test> is the opposite to the following 4 FFs/Latches, which will be removed : <leds_signal_0> <leds_signal_2> <leds_signal_4> <leds_signal_6> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CAD971Test, actual ratio is 32.
+WARNING:Xst:1426 - The value init of the FF/Latch seg3_4_LD hinder the constant cleaning in the block CAD971Test.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch seg2_6_LD hinder the constant cleaning in the block CAD971Test.
+   You should achieve better results by setting this init to 0.
+FlipFlop VGA_Control/CurrentVPos_7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <CAD971Test> :
+	Found 10-bit shift register for signal <VGA_SQ/pseudo_rand_31>.
+	Found 13-bit shift register for signal <VGA_SQ/pseudo_rand_21>.
+Unit <CAD971Test> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 489
+ Flip-Flops                                            : 489
+# Shift Registers                                      : 2
+ 10-bit shift register                                 : 1
+ 13-bit shift register                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CAD971Test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3203
+#      GND                         : 1
+#      INV                         : 87
+#      LUT1                        : 513
+#      LUT2                        : 41
+#      LUT3                        : 203
+#      LUT4                        : 477
+#      LUT5                        : 127
+#      LUT6                        : 145
+#      MUXCY                       : 937
+#      MUXF7                       : 9
+#      VCC                         : 1
+#      XORCY                       : 662
+# FlipFlops/Latches                : 494
+#      FD                          : 9
+#      FDC                         : 38
+#      FDCE                        : 134
+#      FDE                         : 94
+#      FDPE                        : 6
+#      FDR                         : 13
+#      FDRE                        : 190
+#      FDSE                        : 7
+#      LD                          : 3
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 3
+#      OBUF                        : 28
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             494  out of  11440     4%  
+ Number of Slice LUTs:                 1595  out of   5720    27%  
+    Number used as Logic:              1593  out of   5720    27%  
+    Number used as Memory:                2  out of   1440     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1745
+   Number with an unused Flip Flop:    1251  out of   1745    71%  
+   Number with an unused LUT:           150  out of   1745     8%  
+   Number of fully used LUT-FF pairs:   344  out of   1745    19%  
+   Number of unique control sets:        30
+
+IO Utilization: 
+ Number of IOs:                          42
+ Number of bonded IOBs:                  32  out of    102    31%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLOCK_24                           | BUFGP                  | 493   |
+RESET_N                            | IBUF+BUFG              | 3     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 12.339ns (Maximum Frequency: 81.042MHz)
+   Minimum input arrival time before clock: 6.356ns
+   Maximum output required time after clock: 8.366ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK_24'
+  Clock period: 12.339ns (frequency: 81.042MHz)
+  Total number of paths / destination ports: 612746 / 1094
+-------------------------------------------------------------------------
+Delay:               12.339ns (Levels of Logic = 15)
+  Source:            VGA_Control/CurrentVPos_3 (FF)
+  Destination:       VGA_SQ/ColorOut_2 (FF)
+  Source Clock:      CLOCK_24 rising
+  Destination Clock: CLOCK_24 rising
+
+  Data Path: VGA_Control/CurrentVPos_3 to VGA_SQ/ColorOut_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.525   1.177  VGA_Control/CurrentVPos_3 (VGA_Control/CurrentVPos_3)
+     LUT2:I0->O            2   0.250   0.726  VGA_Control/Blank_INV_22_o111 (VGA_Control/Blank_INV_22_o11)
+     LUT6:I5->O           22   0.254   1.334  VGA_Control/Blank_INV_22_o2 (VGA_Control/Blank_INV_22_o2)
+     LUT6:I5->O           20   0.254   1.562  VGA_Control/Mmux_ScanlineX11 (ScanlineX<0>)
+     LUT4:I0->O            1   0.254   0.000  VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_lut<0> (VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<0> (VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<1> (VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<2> (VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<3> (VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<4> (VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<4>)
+     MUXCY:CI->O          10   0.235   1.008  VGA_SQ/Mcompar_NumX[31]_GND_8_o_LessThan_238_o_cy<5> (VGA_SQ/NumX[31]_GND_8_o_LessThan_238_o)
+     LUT2:I1->O            2   0.254   0.834  VGA_SQ/GND_8_o_GND_8_o_AND_69_o_SW0 (N32)
+     LUT6:I4->O            2   0.250   0.726  VGA_SQ/GND_8_o_GND_8_o_AND_69_o (VGA_SQ/GND_8_o_GND_8_o_AND_69_o)
+     LUT6:I5->O            3   0.254   0.874  VGA_SQ/Mmux_GND_8_o_PWR_9_o_mux_252_OUT1231113 (VGA_SQ/Mmux_GND_8_o_PWR_9_o_mux_252_OUT123111)
+     LUT6:I4->O            1   0.250   0.682  VGA_SQ/GND_8_o_PWR_9_o_mux_252_OUT<0>12 (VGA_SQ/GND_8_o_PWR_9_o_mux_252_OUT<0>1)
+     LUT6:I5->O            1   0.254   0.000  VGA_SQ/GND_8_o_PWR_9_o_mux_252_OUT<2> (VGA_SQ/GND_8_o_PWR_9_o_mux_252_OUT<2>)
+     FDSE:D                    0.074          VGA_SQ/ColorOut_2
+    ----------------------------------------
+    Total                     12.339ns (3.416ns logic, 8.923ns route)
+                                       (27.7% logic, 72.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK_24'
+  Total number of paths / destination ports: 865 / 745
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 2)
+  Source:            RESET_N (PAD)
+  Destination:       leds_signal_1 (FF)
+  Destination Clock: CLOCK_24 rising
+
+  Data Path: RESET_N to leds_signal_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            63   1.328   1.921  RESET_N_IBUF (RESET_N_IBUF)
+     INV:I->O            179   0.255   2.393  RESET_N_IBUF_BUFG_LUT1_INV_0 (RESET_N_IBUF_BUFG_LUT1)
+     FDPE:PRE                  0.459          leds_signal_1
+    ----------------------------------------
+    Total                      6.356ns (2.042ns logic, 4.314ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RESET_N'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.933ns (Levels of Logic = 2)
+  Source:            RESET_N (PAD)
+  Destination:       flag_rst_0018 (LATCH)
+  Destination Clock: RESET_N rising
+
+  Data Path: RESET_N to flag_rst_0018
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            63   1.328   1.921  RESET_N_IBUF (RESET_N_IBUF)
+     INV:I->O            179   0.255   2.393  RESET_N_IBUF_BUFG_LUT1_INV_0 (RESET_N_IBUF_BUFG_LUT1)
+     LD:D                      0.036          flag_rst_0018
+    ----------------------------------------
+    Total                      5.933ns (1.619ns logic, 4.314ns route)
+                                       (27.3% logic, 72.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK_24'
+  Total number of paths / destination ports: 228 / 28
+-------------------------------------------------------------------------
+Offset:              8.366ns (Levels of Logic = 4)
+  Source:            VGA_Control/CurrentVPos_3 (FF)
+  Destination:       VGA_B<1> (PAD)
+  Source Clock:      CLOCK_24 rising
+
+  Data Path: VGA_Control/CurrentVPos_3 to VGA_B<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.525   1.177  VGA_Control/CurrentVPos_3 (VGA_Control/CurrentVPos_3)
+     LUT2:I0->O            2   0.250   0.726  VGA_Control/Blank_INV_22_o111 (VGA_Control/Blank_INV_22_o11)
+     LUT6:I5->O           22   0.254   1.562  VGA_Control/Blank_INV_22_o2 (VGA_Control/Blank_INV_22_o2)
+     LUT6:I3->O            2   0.235   0.725  VGA_Control/Mmux_BLUE11 (VGA_B_0_OBUF)
+     OBUF:I->O                 2.912          VGA_B_0_OBUF (VGA_B<0>)
+    ----------------------------------------
+    Total                      8.366ns (4.176ns logic, 4.190ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RESET_N'
+  Total number of paths / destination ports: 7 / 5
+-------------------------------------------------------------------------
+Offset:              7.484ns (Levels of Logic = 4)
+  Source:            seg3_4_LD (LATCH)
+  Destination:       sevensegments<1> (PAD)
+  Source Clock:      RESET_N rising
+
+  Data Path: seg3_4_LD to sevensegments<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               3   0.581   0.994  seg3_4_LD (seg3_4_LD)
+     LUT3:I0->O            1   0.235   0.910  seg1_11 (seg1_1)
+     LUT6:I3->O            1   0.235   0.682  Mmux_sevensegments21 (Mmux_sevensegments2)
+     LUT6:I5->O            1   0.254   0.681  Mmux_sevensegments22 (sevensegments_1_OBUF)
+     OBUF:I->O                 2.912          sevensegments_1_OBUF (sevensegments<1>)
+    ----------------------------------------
+    Total                      7.484ns (4.217ns logic, 3.267ns route)
+                                       (56.3% logic, 43.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLOCK_24
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |   12.339|         |         |         |
+RESET_N        |    6.590|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.78 secs
+ 
+--> 
+
+Total memory usage is 4520084 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   61 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

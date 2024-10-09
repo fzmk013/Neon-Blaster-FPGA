@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\CAD971Test.ncd
+OUTFILE=C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx\CAD971Test.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\fzmk0\Desktop\CADProject_FatemeZahraMousanejad_AmirMohammadOmidi\CADProject_FatemeZahraMousanejad_980122680006\CAD_VGA_Xilinx
+LICENSE=WebPack
+USER_INFO=__0_0_0
